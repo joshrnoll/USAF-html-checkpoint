@@ -1,0 +1,151 @@
+html body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Includes margin and padding when calculating sizes*/
+  font:
+    1.2rem "Fira Sans",
+    sans-serif;
+}
+
+.topnav {
+  background-color: rgb(45, 45, 45);
+  color: white;
+  padding: 15px;
+  display: flex;
+  font-size: 3vh;
+  height: 5vh;
+}
+
+.topnav > * {
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.topnav > a {
+  text-decoration: none;
+  color: white;
+}
+
+.topnav > a:hover {
+  text-decoration: underline;
+}
+
+.topnav > a:visited {
+  color: grey;
+}
+
+.topnav .search-bar {
+  margin-left: auto;
+  padding: 0.5%
+}
+
+.topnav .search-bar > * {
+  height: 24px;
+  box-sizing: border-box;
+}
+
+.topnav .search-bar button {
+  height: 24px;
+  background-color: rgb(45, 45, 45);
+  color: yellow;
+  border: 1px yellow solid;
+  border-radius: 3px;
+  font-size: 2vh;
+}
+
+.topnav .search-bar button:hover {
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.login-box {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login-box > input {
+  width: 50vw;
+  height: 3vh;
+}
+
+.login-box h1 {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 5vh;
+  font-weight: normal;
+}
+
+.login-box h3 {
+  font-size: 2vh;
+  font-weight: normal;
+  margin: 5px;
+}
+
+.login-box button {
+  margin: 15px;
+  background-color: rgb(55, 55, 255);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 2vh;
+  padding: 1.5vh;
+}
+
+.login-box button:hover {
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.movie {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  gap: 15px;
+}
+
+.movie img {
+  margin: 15px;
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  grid-column: 1;
+}
+
+.movie .movie-info {
+  margin: 15px;
+  box-sizing: border-box;
+  grid-column: 2;
+  max-width: 100%;
+  margin-right: auto;
+}
+
+.movie .comment-box {
+  margin: 15px;
+  box-sizing: border-box;
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.movie .comment-box input {
+  box-sizing: border-box;
+  margin: 15px;
+  height: 30px;
+}
+
+.movie .comment-box button {
+  margin: 15px;
+  background-color: rgb(55, 55, 255);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 2vh;
+  padding: 1.5vh;
+}
+
+.movie .comment-box button:hover {
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
